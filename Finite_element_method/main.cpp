@@ -20,14 +20,14 @@ const double pi = 3.1415926535898;
 
 double conc_an(double x, double y)
 {
-    //return (sin(pi * x) * sinh(pi * (1 - y)) + sin(pi * y) * sinh(pi * (1 - x))) / sinh(pi);
-    return (1 / sinh(pi)) * (sin(pi * x) * sinh(pi * (1 - y))) + (1 / sinh(2 * pi)) * (sin(2 * pi * y) * sinh(2 * pi * x)) + (1 / sinh(3 * pi)) * (sin(3 * pi * x) * sinh(3 * pi * y)) + (1 / sinh(4 * pi)) * (sin(4 * pi * y) * sinh(4 * pi * (1 - x))) - (sin(5 * pi * x) * sin(6 * pi * y)) / (61 * (pi * pi));
+    return (sin(pi * x) * sinh(pi * (1 - y)) + sin(pi * y) * sinh(pi * (1 - x))) / sinh(pi);
+    //return (1 / sinh(pi)) * (sin(pi * x) * sinh(pi * (1 - y))) + (1 / sinh(2 * pi)) * (sin(2 * pi * y) * sinh(2 * pi * x)) + (1 / sinh(3 * pi)) * (sin(3 * pi * x) * sinh(3 * pi * y)) + (1 / sinh(4 * pi)) * (sin(4 * pi * y) * sinh(4 * pi * (1 - x))) - (sin(5 * pi * x) * sin(6 * pi * y)) / (61 * (pi * pi));
 }
 
 double source(double x, double y)
 {
-    //return 0;
-    return sin(5 * pi * x) * sin(6 * pi * y);
+    return 0;
+    //return sin(5 * pi * x) * sin(6 * pi * y);
 }
 
 // Class including everything needed
